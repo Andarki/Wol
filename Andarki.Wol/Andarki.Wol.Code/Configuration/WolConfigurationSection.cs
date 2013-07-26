@@ -21,5 +21,15 @@ namespace Andarki.Wol
                 return (MachineCollection)base["Machines"];
             }
         }
+
+        [ConfigurationProperty("Port", DefaultValue=9)]
+        //[RegexStringValidator(@"\d*")]
+        public int Port
+        {
+            get
+            {
+                return (int)base["Port"];
+            }
+        }
     }
 }

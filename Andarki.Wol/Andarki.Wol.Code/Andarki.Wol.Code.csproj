@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Configuration\MachineCollection.cs" />
     <Compile Include="Configuration\MachineConfig.cs" />
+    <Compile Include="Dto\Machine.cs" />
     <Compile Include="WolClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Configuration\WolConfigurationSection.cs" />

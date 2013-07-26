@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/angular")
+@Scripts.Render("~/bundles/wol")
+
     @RenderSection("scripts", required: false)
 </head>
 <body>
@@ -14,7 +15,8 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a href="~/">ASP.NET Web API</a></p>
+                    <a href="~/">Andarki Wake-on-Lan</a>
+                </p>
             </div>
             <div class="float-right">
                 <nav>
@@ -26,6 +28,6 @@
             </div>
         </div>
     </header>
-    @RenderBody()    
+    @RenderBody()
 </body>
 </html>

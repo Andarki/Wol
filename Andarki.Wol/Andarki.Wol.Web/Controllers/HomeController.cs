@@ -12,9 +12,7 @@ namespace Andarki.Wol.Web.Controllers
     {
         public ActionResult Index()
         {
-            var wolConfigurationSection = ConfigurationManager.GetSection("MachinesSection") as WolConfigurationSection;
-
-            return View(wolConfigurationSection.Machines);
+            return View();
         }
     }
 }
