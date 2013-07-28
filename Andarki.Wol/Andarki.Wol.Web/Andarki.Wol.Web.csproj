@@ -238,9 +238,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Andarki.Wol.Code\Andarki.Wol.Code.csproj">
+    <ProjectReference Include="..\Andarki.Wol.Code\Andarki.Wol.csproj">
       <Project>{37085829-e7ac-44b9-85fc-d67dc2fb0bd3}</Project>
-      <Name>Andarki.Wol.Code</Name>
+      <Name>Andarki.Wol</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -259,7 +259,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>6850</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:3739/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

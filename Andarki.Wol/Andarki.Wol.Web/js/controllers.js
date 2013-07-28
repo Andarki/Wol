@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('wol.controllers', [/*'wol.services'*/]).
-  controller('MachineListCtrl', function ($scope, $timeout, Machine, WakeUp) {
+  controller('MachineListCtrl', ['$scope', '$timeout', 'Machine', 'WakeUp', function ($scope, $timeout, Machine, WakeUp) {
       $scope.messages = new Array();
 
       // Get list of machines to wake up from server
@@ -31,4 +31,4 @@ angular.module('wol.controllers', [/*'wol.services'*/]).
           }
           );
       }
-  });
+  }]);

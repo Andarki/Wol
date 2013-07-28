@@ -2,11 +2,12 @@
     <tr>
         <th>Machine</th>
     </tr>
-    <tr ng-repeat="machine in machines">
-        <!--<td>{{machine.Name}}</td>-->
-        <td ng-click="wakeUp(machine)"><a>{{machine.Name}}</a></td>
+    <tr ng-repeat="machine in machines" ng-click="wakeUp(machine)" style="cursor: pointer; text-decoration: underline">
+        <td>{{machine.Name}}</td>
     </tr>
 </table>
-<p ng-repeat="message in messages">
+<div style="border: dashed 1px" ng-hide="messages.length == 0">
+<p ng-repeat="message in messages" style="border: dashed 1px">
     {{message}}
 </p>
+</div>

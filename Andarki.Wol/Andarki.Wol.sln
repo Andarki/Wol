@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andarki.Wol.Web", "Andarki.Wol.Web\Andarki.Wol.Web.csproj", "{D7B1191A-60A4-46DD-BF89-3F2F15437CCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andarki.Wol.Code", "Andarki.Wol.Code\Andarki.Wol.Code.csproj", "{37085829-E7AC-44B9-85FC-D67DC2FB0BD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andarki.Wol", "Andarki.Wol.Code\Andarki.Wol.csproj", "{37085829-E7AC-44B9-85FC-D67DC2FB0BD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
