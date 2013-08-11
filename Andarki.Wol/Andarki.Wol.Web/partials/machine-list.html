@@ -1,13 +1,15 @@
-<table>
-    <tr>
-        <th>Machine</th>
-    </tr>
-    <tr ng-repeat="machine in machines" ng-click="wakeUp(machine)" style="cursor: pointer; text-decoration: underline">
-        <td>{{machine.Name}}</td>
-    </tr>
-</table>
-<div style="border: dashed 1px" ng-hide="messages.length == 0">
+<div class="grid">
+    <div class="col-12 grid-header">Select a machine to wake it up</div>
+    <div class="col-12 grid-row clicky" ng-repeat="machine in machines" ng-click="wakeUp(machine)">{{machine.Name}}</div>
+</div>
+<!--<div style="border: dashed 1px; clear:both;" ng-hide="messages.length == 0">
 <p ng-repeat="message in messages" style="border: dashed 1px">
     {{message}}
 </p>
+
+
+</div>-->
+<div class="grid" ng-hide="messages.length == 0">
+    <div class="col-12 grid-header">Messages</div>
+    <div class="col-12 grid-row" ng-repeat="message in messages">{{message}}</div>
 </div>
