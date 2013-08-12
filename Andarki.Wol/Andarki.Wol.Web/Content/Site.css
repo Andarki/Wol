@@ -1,11 +1,14 @@
 ﻿body {
-    background-color: rgba(192, 192, 192, 0.4 );
     font-size: 12pt;
+    background-color: rgba(192, 192, 192, 0.4 );
+
+    /* Disable pinch-zoom, disable wait between touches for WP8/IE10 */
+    -ms-touch-action: pan-y;
 }
 
 .grid [class^="col-"] {
     border-bottom: 1px solid #DEDEDE;
-    padding: 0.5em 0.5em;
+    padding: 0.5em;
 }
 
 .grid-header {
@@ -13,12 +16,17 @@
     font-weight: bold;
     font-size: 0.8em;
     background-color: #007AD0;
-    background-image: -webkit-gradient(linear, 0% 5%, 0% 100%, from(#0398FF), to(#005C9D));
     background-image: -moz-linear-gradient(center top, #0398FF, #007AD0 50%, #005C9D);
-    background-image: linear-gradient(center top, #0398FF, #007AD0 50%, #005C9D);
 }
 
 .grid-row {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+@media screen {
+    /* Fix text being small on WP8/IE10 */
+    @-ms-viewport {
+        width: auto!important;
+    }
 }
