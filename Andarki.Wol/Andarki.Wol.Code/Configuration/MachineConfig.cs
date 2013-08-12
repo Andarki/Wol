@@ -38,5 +38,12 @@ namespace Andarki.Wol
             get { return (string)this["MacAddress"]; }
             set { this["MacAddress"] = value; }
         }
+
+        [ConfigurationProperty("Port", IsRequired = false, IsKey = false)]
+        public int? Port
+        {
+            get { return (int?)this["Port"]; }
+            set { this["Port"] = value; }
+        }
     }
 }

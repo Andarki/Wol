@@ -28,7 +28,7 @@ namespace Andarki.Wol.Web.Controllers
                 throw new HttpResponseException(Request.CreateErrorResponse(HttpStatusCode.NotFound, string.Format("Found no machine with id {0}", id)));
 
             WolClient.SendMagicPacket(machine.MacAddress, 
-                (ConfigurationManager.GetSection("MachinesSection") as WolConfigurationSection).Port);
+                machine.Port ?? (ConfigurationManager.GetSection("MachinesSection") as WolConfigurationSection).Port);
 
             return new Machine { Id = machine.Id, Name = machine.Name };
         }
