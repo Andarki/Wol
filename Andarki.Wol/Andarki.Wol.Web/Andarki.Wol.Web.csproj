@@ -264,7 +264,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6850</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3739/</IISUrl>
+          <IISUrl>http://localhost:3739/wol</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
