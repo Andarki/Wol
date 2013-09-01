@@ -1,7 +1,6 @@
 ﻿body {
     font-size: 12pt;
     background-color: rgba(192, 192, 192, 0.4 );
-
     /* Disable pinch-zoom, disable wait between touches for WP8/IE10 */
     -ms-touch-action: pan-y;
 }
@@ -12,11 +11,17 @@
 }
 
 .grid-header {
-    color: #FFFFFF;
+    color: #fff !important;
     font-weight: bold;
     font-size: 0.8em;
-    background-color: #007AD0;
-    background-image: -moz-linear-gradient(center top, #0398FF, #007AD0 50%, #005C9D);
+    background-color: #d14836;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#dd4b39),to(#d14836));
+    background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
+    background-image: -moz-linear-gradient(top,#dd4b39,#d14836);
+    background-image: -ms-linear-gradient(top,#dd4b39,#d14836);
+    background-image: -o-linear-gradient(top,#dd4b39,#d14836);
+    background-image: linear-gradient(top,#dd4b39,#d14836);
+    /*background-image: -moz-linear-gradient(center top, #0398FF, #007AD0 50%, #005C9D);*/
 }
 
 .grid-row {
@@ -27,6 +32,6 @@
 @media screen {
     /* Fix text being small on WP8/IE10 */
     @-ms-viewport {
-        width: auto!important;
+        width: auto;
     }
 }
